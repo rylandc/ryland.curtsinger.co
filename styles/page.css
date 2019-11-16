@@ -1,0 +1,26 @@
+header {
+    padding: 1rem;
+    margin: 2vh;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-width: 2px;
+}
+
+header h1 {
+    font-size: 20pt;
+    margin: 0 0 10px 0;
+}
+
+.primary-nav {
+    margin: 0;
+}
+
+.primary-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.primary-nav ul li {
+    padding: 10px;
+    display: inline;
+}

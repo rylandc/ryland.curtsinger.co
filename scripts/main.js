@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty('--bg-orientation', Math.floor(Math.random() * 351 + 5) + 'deg');

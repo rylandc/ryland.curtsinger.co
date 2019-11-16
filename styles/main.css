@@ -1,0 +1,74 @@
+:root {
+    --bg-orientation: 180deg; 
+    --border-color: #dfc4c1;
+    --bg-color-1: #ff7c81;
+    --bg-color-1-light: #ffafb2;
+    --bg-color-2: #a0efdf;
+    --fg-color-1:   #34344a;
+    --fg-color-2: #432e44;
+    --fg-color-3: #8ed081;
+    font-size: 100%;
+}
+
+body {
+    color: var(--fg-color-2);
+    margin: 0;
+    background: no-repeat linear-gradient(var(--bg-orientation), var(--bg-color-2) 60%, var(--bg-color-1-light));
+    min-height: 100vh;
+}
+
+main {
+    padding: 5vh 10vw;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: var(--fg-color-1);
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10vh 0 1vh 0;
+    color: var(--fg-color-1);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header a {
+    color: var(--fg-color-1);
+    text-decoration: none;
+}
+
+.primary-nav {
+    margin: 10vh 0 0 0;
+    padding: 0;
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+.primary-nav a {
+    color: var(--fg-color-1);
+}
+
+header a:hover {
+    color: var(--bg-color-1);
+    text-decoration: underline;
+    text-decoration-color: var(--fg-color-1);
+}
+
+.primary-nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-nav ul li{
+    padding: 5px;
+}
