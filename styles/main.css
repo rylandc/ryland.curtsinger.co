@@ -13,7 +13,7 @@
 body {
     color: var(--fg-color-2);
     margin: 0;
-    background: no-repeat linear-gradient(var(--bg-orientation), var(--bg-color-2) 60%, var(--bg-color-1-light));
+    background: linear-gradient(var(--bg-orientation), var(--bg-color-2) 60%, var(--bg-color-1-light));
     min-height: 100vh;
 }
 
