@@ -21,8 +21,6 @@
 }
 
 .gallery__item {
-    display: block;
-    overflow: hidden;
     grid-row: span 1;
     grid-column: span 1;
 }
@@ -45,25 +43,23 @@
 }
 
 .gallery__item a {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 100%;
 }
 
 .gallery__item img {
+    height: 100%;
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
-@media (min-width: 765px) {
-    .gallery__item img {
-        min-height: 100%;
-        object-fit: cover;
-    }
+.gallery__item img:hover {
+    object-fit: contain;
+}
 
-    .gallery__item img:hover {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: contain;
+@media (max-width: 764px) {
+    .gallery__item img {
+        height: auto;
     }
 }
