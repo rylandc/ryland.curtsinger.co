@@ -1,7 +1,8 @@
 .main-header {
+    box-sizing: border-box;
     display: block;
     padding: 1rem;
-    margin: 2vh;
+    margin: 3vmin;
     border-style: solid;
     border-color: var(--c-border);
     border-width: 2px;

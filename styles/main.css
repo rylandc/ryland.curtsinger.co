@@ -29,7 +29,7 @@ body {
 }
 
 main {
-    padding: 5vh 10vw;
+    margin: 7vh 3vmin 3vmin;
     overflow-wrap: break-word;
     hyphens: auto;
 }
@@ -79,12 +79,18 @@ a {
     text-decoration-color: var(--c-interact-d);
 }
 
+a:hover {
+    color: var(--c-interact);
+}
+
 img {
     max-width: 100%;
 }
 
-a:hover {
-    color: var(--c-interact);
+main > section {
+    width: 100%;
+    max-width: 60ch;
+    margin: 2em auto;
 }
 
 .main-header {
@@ -137,7 +143,6 @@ a:hover {
     width: max-content;
     text-decoration: none;
     text-align: center;
-    align-self: center;
     display: inline-block;
 }
 
