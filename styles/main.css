@@ -1,7 +1,8 @@
 :root {
-    --bg-orientation: 180deg; 
+    --bg-orientation: 15deg; 
     --c-bg-1: #ffbfc1;
     --c-bg-2: #bffff2;
+    --c-bg-3: #f8c6c7;
     --c-text-1: #3e3e59;
     --c-text-2:   #272738;
     --c-border: #eed0ce;
@@ -19,7 +20,7 @@
 body {
     display: flow-root;
     margin: 0;
-    background: linear-gradient(var(--bg-orientation), var(--c-bg-2) 60%, var(--c-bg-1));
+    background: linear-gradient(var(--bg-orientation), var(--c-bg-3), var(--c-bg-2) 20%, var(--c-bg-2) 60%, var(--c-bg-1));
     min-height: 100vh;
     font-family: "Merriweather", serif;
     font-weight: 300;
