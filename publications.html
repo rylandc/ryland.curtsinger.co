@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Publications</title>
-        <script async src="/scripts/main.js"></script>
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/page.css">
-        <link rel="stylesheet" href="/styles/cards.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Raleway:400,500&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-        <header class="main-header">
-            <a class="site-title" href="/index.html">Ryland Curtsinger</a>
-            <nav role="navigation" class="primary-nav">
-                <ul>
-                    <li><a href="/resume.html">r&eacute;sum&eacute;</a></li>
-                    <li><a href="/publications.html">publications</a></li>
-                    <li><a href="/pictures.html">pictures of my cat</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <ul class="card-container">
-                <li class="card">
-                    <h1 class="card__title" id="sptitle">"Shortest Paths in Dragonfly Systems"</h1>
-                    <p>by R. Curtsinger and D. Bunde,  <i>IEEE International Workshop of High-Performance Interconnection Networks in the Exascale and Big-Data Era (HiPINEB)</i>, 2019, pending publication</p>
-                    <a aria-labelledby="sptitle" rel="noopener noreferrer" target="_blank" class="button-link" href="http://faculty.knox.edu/dbunde/pubs/shortValiant.html">More information</a>
-                </li>
-            </ul>
-        </main>
-    </body>
-</html>
+---
+layout: layouts/page.liquid
+pageTitle: Publications
+navName: publications
+tags: topLevel
+---
+<ul class="card-container">
+    <li class="card">
+        <h1 class="card__title" id="sptitle">"Shortest Paths in Dragonfly Systems"</h1>
+        <p>by R. Curtsinger and D. Bunde,  <i>IEEE International Workshop of High-Performance Interconnection Networks in the Exascale and Big-Data Era (HiPINEB)</i>, 2019, pending publication</p>
+        <a aria-labelledby="sptitle" rel="noopener noreferrer" target="_blank" class="button-link" href="http://faculty.knox.edu/dbunde/pubs/shortValiant.html">More information</a>
+    </li>
+</ul>

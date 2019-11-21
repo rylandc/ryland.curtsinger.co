@@ -1,0 +1,27 @@
+.main-header {
+    box-sizing: border-box;
+    display: block;
+    padding: 1rem;
+    margin: 3vmin;
+    border-style: solid;
+    border-color: var(--c-border);
+    border-width: 2px;
+}
+
+.site-title {
+    font-size: 1.75rem;
+}
+
+.primary-nav {
+    margin: 10px 0 0 0;
+}
+
+.primary-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.primary-nav ul li {
+    padding: 10px;
+    display: inline;
+}

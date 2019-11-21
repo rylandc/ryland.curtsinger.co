@@ -93,6 +93,40 @@ main > section {
     margin: 2em auto;
 }
 
+article {
+    display: grid;
+    grid-template-columns: 1fr 60ch 1fr;
+}
+
+article > h1,h2,h3,h4,h5,h6,p,ul,ol {
+    grid-column: 2;
+}
+
+article > figure {
+    grid-column: 1 / 4;
+}
+
+article > figure.fig-fit {
+    max-height: 90vh;
+}
+
+article > figure > img {
+    width: 100%;
+    height: calc(100% - 2em);
+    object-fit: contain;
+}
+
+article > figure > figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+article h1 + p::first-letter{
+    font-size: 130%;
+    color: var(--c-focus);
+}
+
 .main-header {
     text-align: center;
     padding: 12vh 0 1vh 0;
