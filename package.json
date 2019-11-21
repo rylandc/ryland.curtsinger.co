@@ -1,0 +1,23 @@
+{
+  "name": "ryland.curtsinger.co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rylandc/ryland.curtsinger.co.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rylandc/ryland.curtsinger.co/issues"
+  },
+  "homepage": "https://github.com/rylandc/ryland.curtsinger.co#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}
