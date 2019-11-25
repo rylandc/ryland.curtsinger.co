@@ -95,7 +95,13 @@ main > section {
 
 article {
     display: grid;
-    grid-template-columns: 1fr 60ch 1fr;
+    grid-template-columns: 1fr 50rem 1fr;
+}
+
+@media (max-width: 52rem) {
+    article {
+        display: block;
+    }
 }
 
 article > h1,h2,h3,h4,h5,h6,p,ul,ol {
@@ -104,22 +110,29 @@ article > h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 article > figure {
     grid-column: 1 / 4;
+    border-bottom: solid 0.25em var(--c-focus);
+    margin: 1em 0 2em 0;
 }
 
 article > figure.fig-fit {
-    max-height: 90vh;
+    grid-column: 2;
 }
 
 article > figure > img {
     width: 100%;
-    height: calc(100% - 2em);
+    height: auto;
     object-fit: contain;
+}
+
+article > figure.fig-fit > img {
+    max-height: 90vh;
+    max-width: 100%;
 }
 
 article > figure > figcaption {
     font-size: 0.9em;
     font-style: italic;
-    margin-top: 0.5em;
+    margin: 0.5em 0 0.5em 0;
 }
 
 article h1 + p::first-letter{

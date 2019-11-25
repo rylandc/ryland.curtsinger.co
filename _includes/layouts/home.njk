@@ -6,12 +6,12 @@ siteTitle: Ryland Curtsinger
     <a class="site-title" href="/">{{ siteTitle }}</a>
     <nav role="navigation" class="primary-nav">
         <ul>
-        {% for page in collections.topLevel %}
+        {% for page in collections.topLevel | sortMenu(sortOrder) %}
             <li><a href="{{ page.data.page.url }}">{% if page.data.navName %}  {{ page.data.navName }} {% else %} {{ page.data.pageTitle }} {% endif %}</a></li>
         {% endfor %}
         </ul>
     </nav>
 </header>
 <main>
-{{ content }}
+{{ content | safe }}
 </main>
