@@ -17,4 +17,6 @@ module.exports = function(eleventyConfig) {
             return firstIndex - secondIndex;
         });
     });
+    
+    eleventyConfig.addPassthroughCopy("styles");
 };
