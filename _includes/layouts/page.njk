@@ -7,7 +7,7 @@ siteTitle: Ryland Curtsinger
     <nav role="navigation" class="primary-nav primary-nav--page">
         <ul>
         {% for navPage in collections.topLevel | sortMenu(sortOrder) %}
-            <li><a href="{{ navPage.data.page.url }}">{% if navPage.data.navName %}  {{ navPage.data.navName }} {% else %} {{ navPage.data.navPageTitle }} {% endif %}</a></li>
+            <li><a href="{{ navPage.data.page.url }}"{% if page.url == navPage.url %} class="primary-nav__current"aria-current="page"{% endif %}>{% if navPage.data.navName %}  {{ navPage.data.navName }} {% else %} {{ navPage.data.navPageTitle }} {% endif %}</a></li>
         {% endfor %}
         </ul>
     </nav>
