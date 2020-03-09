@@ -181,6 +181,10 @@ article h1 + p::first-letter{
     padding: 5px;
 }
 
+.primary-nav__current {
+    font-weight: 500;
+}
+
 .button-link {
     font-family: Raleway, sans-serif;
     font-weight: 500;
