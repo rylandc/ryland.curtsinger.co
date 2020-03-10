@@ -1,0 +1,10 @@
+<ul class="card-container">
+{%- for navPage in collection %}
+    <li class="card">
+        {%- if navPage.data.previewImage %}<figure class="card__header-image"><img src="{{ navPage.data.previewImage }}"></figure> {%- endif %}
+        <a href="{{ navPage.data.page.url }}"><h1 class="card__title" id="{{ navPage.fileSlug }}-card-title">{%- if navPage.data.navName %} {{ navPage.data.navName }} {%- else %} {{ navPage.data.title }} {%- endif %}</h1></a>
+        <p>{{ navPage.data.description }}</p>
+        <a aria-labelledby="{{ navPage.fileSlug }}-card-title" class="button-link" href="{{ navPage.data.page.url }}">More</a>
+    </li>
+{%- endfor %}
+</ul>
