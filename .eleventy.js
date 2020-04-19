@@ -1,6 +1,4 @@
 module.exports = function(eleventyConfig) {
-  // Add a filter using the Config API
-
     eleventyConfig.addFilter("sortMenu", function(collection, sortOrder) {
         if(!sortOrder) {
             return collection;
@@ -21,4 +19,5 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("styles");
     eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("files");
 };
