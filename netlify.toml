@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'none'; font-src fonts.gstatic.com; img-src 'self'; style-src 'self' fonts.googleapis.com; script-src 'self';"
+    Content-Security-Policy = "default-src 'none'; font-src 'self' fonts.gstatic.com; img-src 'self' https://eqwc.goatcounter.com/count; style-src 'self' fonts.googleapis.com; script-src 'self'; connect-src https://eqwc.goatcounter.com/count"
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "same-origin"
